@@ -25,5 +25,6 @@ rows = run_query("SELECT * from TRIPS limit 1;")
 
 # Print results.
 for row in rows:
-    print(type(rows))
+    print("hello")
+    print(type(row))
     st.write(row)
