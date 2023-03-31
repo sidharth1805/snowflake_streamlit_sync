@@ -25,7 +25,7 @@ def run_query(query):
 rows = run_query("SELECT * from TRIPS limit 10;")
 st.write("hello")
 #st.write(rows)
-df = pd.DataFrame(rows, columns =['Name', 'Age'])
+df = pd.DataFrame(rows)
 st.write(df)
 # Print results.
 for row in rows:
