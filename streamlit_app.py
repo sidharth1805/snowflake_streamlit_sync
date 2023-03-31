@@ -34,5 +34,5 @@ columns =["TRIPDURATION","STARTTIME",	"STOPTIME"	,"START_STATION_ID"	,"START_STA
 columns_2 = ["START_STATION_ID", "START_STATION_NAME", "TOTAL_HOURS"]
 df = pd.DataFrame(rows, columns=columns)
 df_2 = pd.DataFrame(rows_2, columns=columns_2)
-st.write(df)
+st.write(df_2)
 st.bar_chart(data=df_2, x="START_STATION_NAME", y="TOTAL_HOURS", width=0, height=0, use_container_width=True)
