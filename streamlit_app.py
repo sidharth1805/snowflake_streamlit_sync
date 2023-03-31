@@ -1,6 +1,7 @@
 # streamlit_app.py
 
 import streamlit as st
+import pandas as pd
 import snowflake.connector
 
 # Initialize connection.
@@ -22,9 +23,9 @@ def run_query(query):
         return cur.fetchall()
 
 rows = run_query("SELECT * from TRIPS limit 1;")
+print("hello")
+print(type(rows))
 
 # Print results.
 for row in rows:
-    print("hello")
-    print(type(row))
     st.write(row)
