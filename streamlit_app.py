@@ -25,4 +25,4 @@ rows = run_query("SELECT * from TRIPS;")
 
 # Print results.
 for row in rows:
-    st.write(rows)
+    st.write(row)
