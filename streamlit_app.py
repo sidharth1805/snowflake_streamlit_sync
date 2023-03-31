@@ -27,6 +27,3 @@ st.write("hello")
 #st.write(rows)
 df = pd.DataFrame(rows)
 st.write(df)
-# Print results.
-for row in rows:
-    st.write(row)
