@@ -23,7 +23,7 @@ def run_query(query):
         return cur.fetchall()
 
 rows = run_query("SELECT * from TRIPS limit 10;")
-print("hello")
+st.write("hello")
 print(type(rows))
 
 # Print results.
